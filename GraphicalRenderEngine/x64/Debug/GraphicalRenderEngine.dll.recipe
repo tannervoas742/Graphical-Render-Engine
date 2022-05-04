@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>C:\Users\tanma\Documents\CodingProjects\MyProjects\Voronoi-Wave-Collapse-Generator\VoronoiWaveCollapseGenerator\x64\Debug\GraphicalRenderEngine.dll</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles>
+    <ContentFile>
+      <FullPath>C:\Users\tanma\Documents\CodingProjects\MyProjects\Graphical-Render-Engine\GraphicalRenderEngine\diffuse.png</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\tanma\Documents\CodingProjects\MyProjects\Graphical-Render-Engine\GraphicalRenderEngine\displacement.png</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\tanma\Documents\CodingProjects\MyProjects\Graphical-Render-Engine\GraphicalRenderEngine\normal.png</FullPath>
+    </ContentFile>
+  </ContentFiles>
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

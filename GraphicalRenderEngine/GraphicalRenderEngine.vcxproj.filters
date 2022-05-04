@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Internal">
+      <UniqueIdentifier>{edbb46c4-78c1-412c-aa3c-ce396e848bb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\External">
+      <UniqueIdentifier>{c1abdfe3-47b4-4ac0-9a06-183857e1443e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Included">
+      <UniqueIdentifier>{4031248e-a7fd-4f33-8be0-b986643719e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Included">
+      <UniqueIdentifier>{97463566-d361-4a39-9bae-b6a5270914e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\External">
+      <UniqueIdentifier>{a43dd37d-71e8-4573-8920-8004426b4b13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Internal">
+      <UniqueIdentifier>{0b415694-9ab9-4c25-92a8-ca52baa6b32b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Shaders">
+      <UniqueIdentifier>{a1e9cce2-bb0f-446b-9674-da3469505a9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Textures">
+      <UniqueIdentifier>{a82e722c-8d7b-44b1-ab4b-9273ba9236cc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="imconfig.h">
+      <Filter>Header Files\Included</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui.h">
+      <Filter>Header Files\Included</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_impl_glfw.h">
+      <Filter>Header Files\Included</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_impl_opengl3.h">
+      <Filter>Header Files\Included</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_impl_opengl3_loader.h">
+      <Filter>Header Files\Included</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_internal.h">
+      <Filter>Header Files\Included</Filter>
+    </ClInclude>
+    <ClInclude Include="imstb_rectpack.h">
+      <Filter>Header Files\Included</Filter>
+    </ClInclude>
+    <ClInclude Include="imstb_textedit.h">
+      <Filter>Header Files\Included</Filter>
+    </ClInclude>
+    <ClInclude Include="imstb_truetype.h">
+      <Filter>Header Files\Included</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Header Files\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="EBO.h">
+      <Filter>Header Files\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework.h">
+      <Filter>Header Files\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="GREUtilities.h">
+      <Filter>Header Files\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh.h">
+      <Filter>Header Files\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Model.h">
+      <Filter>Header Files\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLWindow.h">
+      <Filter>Header Files\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="PCH.h">
+      <Filter>Header Files\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneRenderer.h">
+      <Filter>Header Files\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="shaderClass.h">
+      <Filter>Header Files\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Header Files\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="VAO.h">
+      <Filter>Header Files\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="VBO.h">
+      <Filter>Header Files\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="GREGlobals.h">
+      <Filter>Header Files\External</Filter>
+    </ClInclude>
+    <ClInclude Include="GREModuleInterface.h">
+      <Filter>Header Files\External</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.h">
+      <Filter>Header Files\External</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Source Files\Internal</Filter>
+    </ClCompile>
+    <ClCompile Include="EBO.cpp">
+      <Filter>Source Files\Internal</Filter>
+    </ClCompile>
+    <ClCompile Include="GREUtilities.cpp">
+      <Filter>Source Files\Internal</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh.cpp">
+      <Filter>Source Files\Internal</Filter>
+    </ClCompile>
+    <ClCompile Include="Model.cpp">
+      <Filter>Source Files\Internal</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGLWindow.cpp">
+      <Filter>Source Files\Internal</Filter>
+    </ClCompile>
+    <ClCompile Include="PCH.cpp">
+      <Filter>Source Files\Internal</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneRenderer.cpp">
+      <Filter>Source Files\Internal</Filter>
+    </ClCompile>
+    <ClCompile Include="shaderClass.cpp">
+      <Filter>Source Files\Internal</Filter>
+    </ClCompile>
+    <ClCompile Include="stb.cpp">
+      <Filter>Source Files\Internal</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Source Files\Internal</Filter>
+    </ClCompile>
+    <ClCompile Include="VAO.cpp">
+      <Filter>Source Files\Internal</Filter>
+    </ClCompile>
+    <ClCompile Include="VBO.cpp">
+      <Filter>Source Files\Internal</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLMain.cpp">
+      <Filter>Source Files\External</Filter>
+    </ClCompile>
+    <ClCompile Include="GREGlobals.cpp">
+      <Filter>Source Files\External</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer.cpp">
+      <Filter>Source Files\External</Filter>
+    </ClCompile>
+    <ClCompile Include="glad.c">
+      <Filter>Source Files\Included</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui.cpp">
+      <Filter>Source Files\Included</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_draw.cpp">
+      <Filter>Source Files\Included</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_impl_glfw.cpp">
+      <Filter>Source Files\Included</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_impl_opengl3.cpp">
+      <Filter>Source Files\Included</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_tables.cpp">
+      <Filter>Source Files\Included</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_widgets.cpp">
+      <Filter>Source Files\Included</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="diffuse.png">
+      <Filter>Resource Files\Textures</Filter>
+    </Image>
+    <Image Include="displacement.png">
+      <Filter>Resource Files\Textures</Filter>
+    </Image>
+    <Image Include="normal.png">
+      <Filter>Resource Files\Textures</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="blur.frag">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="default.frag">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="default.geom">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="default.vert">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="framebuffer.frag">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="framebuffer.vert">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>
