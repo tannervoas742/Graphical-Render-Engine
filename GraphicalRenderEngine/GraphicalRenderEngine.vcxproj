@@ -204,6 +204,7 @@
     </ClInclude>
     <ClInclude Include="Mesh.h" />
     <ClInclude Include="Model.h" />
+    <ClInclude Include="ModelInstance.h" />
     <ClInclude Include="OpenGLWindow.h" />
     <ClInclude Include="PCH.h" />
     <ClInclude Include="Renderer.h" />
@@ -249,6 +250,7 @@
     </ClCompile>
     <ClCompile Include="Mesh.cpp" />
     <ClCompile Include="Model.cpp" />
+    <ClCompile Include="ModelInstance.cpp" />
     <ClCompile Include="OpenGLWindow.cpp" />
     <ClCompile Include="PCH.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

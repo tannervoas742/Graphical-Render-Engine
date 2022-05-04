@@ -114,6 +114,9 @@
     <ClInclude Include="Renderer.h">
       <Filter>Header Files\External</Filter>
     </ClInclude>
+    <ClInclude Include="ModelInstance.h">
+      <Filter>Header Files\Internal</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Camera.cpp">
@@ -184,6 +187,9 @@
     </ClCompile>
     <ClCompile Include="imgui_widgets.cpp">
       <Filter>Source Files\Included</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelInstance.cpp">
+      <Filter>Source Files\Internal</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

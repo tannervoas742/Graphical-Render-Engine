@@ -16,22 +16,6 @@ float rectangleVertices[] =
 	-1.0f,  1.0f,  0.0f, 1.0f
 };
 
-// Vertices for plane with texture
-std::vector<Vertex> vertices =
-{
-	Vertex{glm::vec3(-1.0f, -1.0f, 0.0f), glm::vec3(0.0f, 0.0f, 1.0f), glm::vec3(0.0f, 0.0f, 0.0f), glm::vec2(0.0f, 0.0f)},
-	Vertex{glm::vec3(-1.0f, 1.0f, 0.0f), glm::vec3(0.0f, 0.0f, 1.0f), glm::vec3(0.0f, 0.0f, 0.0f), glm::vec2(0.0f, 1.0f)},
-	Vertex{glm::vec3(1.0f, 1.0f, 0.0f), glm::vec3(0.0f, 0.0f, 1.0f), glm::vec3(0.0f, 0.0f, 0.0f), glm::vec2(1.0f, 1.0f)},
-	Vertex{glm::vec3(1.0f, -1.0f, 0.0f), glm::vec3(0.0f, 0.0f, 1.0f), glm::vec3(0.0f, 0.0f, 0.0f), glm::vec2(1.0f, 0.0f)}
-};
-
-// Indices for plane with texture
-std::vector<GLuint> indices =
-{
-	0, 1, 2,
-	0, 2, 3
-};
-
 SceneRenderer::SceneRenderer(int width, int height, int samples)
 {
 	Width = width;
@@ -90,8 +74,21 @@ SceneRenderer::SceneRenderer(int width, int height, int samples)
 		return;
 	}
 
+	//Load data for Lava Rectangle
 	Model* LavaRectangle = new Model("LavaRectangle.json");
-	ActiveModels.push_back(LavaRectangle);
+
+	ModelInstance* LR1 = new ModelInstance("Lava Rectangle");
+	ActiveModels.push_back(LR1);
+
+	LR1->SetScale(glm::vec3(0.5f));
+	glm::vec3 EulerAngle = glm::normalize(glm::vec3(0.0, 1.0, 0.0));
+	float Angle = glm::radians(0.0f);
+	float X = EulerAngle.x * sin(Angle / 2);
+	float Y = EulerAngle.y * sin(Angle / 2);
+	float Z = EulerAngle.z * sin(Angle / 2);
+	float W = cos(Angle / 2);
+	LR1->SetRotation(glm::quat(X, Y, Z, W));
+
 	//GREGlobalSettings.TerminateRenderer = true;
 
 }
@@ -198,9 +195,19 @@ void SceneRenderer::Render(GLFWwindow* Window, int NewWidth, int NewHeight)
 	// Updates counter and times
 	prevTime = crntTime;
 	crntTime = glfwGetTime();
+	if (startTime < 0.0f) startTime = crntTime;
 	double timeDiff = crntTime - prevTime;
 	double timeDiffDisplay = crntTime - prevDisplayTime;
 	counter++;
+
+	float TimeSinceStart = (float) (crntTime - startTime);
+	glm::vec3 EulerAngle = glm::normalize(glm::vec3(1.0, 1.0, 0.0));
+	float Angle = glm::radians(5.0f * TimeSinceStart);
+	float X = EulerAngle.x * sin(Angle / 2);
+	float Y = EulerAngle.y * sin(Angle / 2);
+	float Z = EulerAngle.z * sin(Angle / 2);
+	float W = cos(Angle / 2);
+	//ActiveModels[0]->SetRotation(glm::quat(X, Y, Z, W));
 
 	if (timeDiffDisplay >= 1.0 / 30.0 || Resized)
 	{
@@ -237,6 +244,14 @@ void SceneRenderer::Render(GLFWwindow* Window, int NewWidth, int NewHeight)
 
 	//TODO: Sort models by diffuse shader type, activate shader, load textures, and draw.
 	Shader::LoadedShaders["default"]->Activate();
+
+	glm::vec4 lightColor = glm::vec4(1.0f, 1.0f, 1.0f, 1.0f);
+	glm::vec3 lightPos = SceneCamera->Position;
+
+	Shader::LoadedShaders["default"]->Activate();
+	glUniform4f(glGetUniformLocation(Shader::LoadedShaders["default"]->ID, "lightColor"), lightColor.x, lightColor.y, lightColor.z, lightColor.w);
+	glUniform3f(glGetUniformLocation(Shader::LoadedShaders["default"]->ID, "lightPos"), lightPos.x, lightPos.y, lightPos.z);
+
 	for (int ModelIndex = 0; ModelIndex < ActiveModels.size(); ModelIndex++) {
 		ActiveModels[ModelIndex]->GetTexture("normal")->Bind();
 		glUniform1i(glGetUniformLocation(Shader::LoadedShaders["default"]->ID, "normal0"), 1);

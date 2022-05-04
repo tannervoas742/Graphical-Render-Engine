@@ -13,6 +13,7 @@
 #include "Camera.h"
 #include "ShaderClass.h"
 #include "Model.h"
+#include "ModelInstance.h"
 
 class SceneRenderer
 {
@@ -29,9 +30,10 @@ protected:
     void DeleteFrameBuffers(void);
 
     Camera* SceneCamera = NULL;
-    std::vector<Model*> ActiveModels;
+    std::vector<ModelInstance*> ActiveModels;
 
     double prevTime, crntTime, prevDisplayTime;
+    double startTime = -1.0f;
     int counter;
 
     int Width = 1200;
@@ -40,7 +42,6 @@ protected:
 
     GLenum TexType = GL_TEXTURE_2D;
     
-    //Also Temp but not sure if this should be per model or not
     unsigned int rectVAO, rectVBO;
     unsigned int postProcessingFBO;
     unsigned int postProcessingTexture;
