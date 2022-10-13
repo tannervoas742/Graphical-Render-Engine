@@ -1,6 +1,0 @@
-C:\Users\tanma\Documents\CodingProjects\MyProjects\Voronoi-Wave-Collapse-Generator\VoronoiWaveCollapseGenerator\x64\Debug\diffuse.png
-C:\Users\tanma\Documents\CodingProjects\MyProjects\Voronoi-Wave-Collapse-Generator\VoronoiWaveCollapseGenerator\x64\Debug\displacement.png
-C:\Users\tanma\Documents\CodingProjects\MyProjects\Voronoi-Wave-Collapse-Generator\VoronoiWaveCollapseGenerator\x64\Debug\normal.png
-C:\Users\tanma\Documents\CodingProjects\MyProjects\Voronoi-Wave-Collapse-Generator - Copy\VoronoiWaveCollapseGenerator\x64\Debug\diffuse.png
-C:\Users\tanma\Documents\CodingProjects\MyProjects\Voronoi-Wave-Collapse-Generator - Copy\VoronoiWaveCollapseGenerator\x64\Debug\displacement.png
-C:\Users\tanma\Documents\CodingProjects\MyProjects\Voronoi-Wave-Collapse-Generator - Copy\VoronoiWaveCollapseGenerator\x64\Debug\normal.png

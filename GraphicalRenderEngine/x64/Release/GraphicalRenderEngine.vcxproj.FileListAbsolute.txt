@@ -1,9 +1,0 @@
-C:\Users\tanma\Documents\CodingProjects\MyProjects\Voronoi-Wave-Collapse-Generator\VoronoiWaveCollapseGenerator\x64\Release\diffuse.png
-C:\Users\tanma\Documents\CodingProjects\MyProjects\Voronoi-Wave-Collapse-Generator\VoronoiWaveCollapseGenerator\x64\Release\displacement.png
-C:\Users\tanma\Documents\CodingProjects\MyProjects\Voronoi-Wave-Collapse-Generator\VoronoiWaveCollapseGenerator\x64\Release\normal.png
-C:\Users\tanma\Documents\CodingProjects\MyProjects\Voronoi-Wave-Collapse-Generator\VoronoiWaveCollapseGenerator\x64\Release\blur.frag
-C:\Users\tanma\Documents\CodingProjects\MyProjects\Voronoi-Wave-Collapse-Generator\VoronoiWaveCollapseGenerator\x64\Release\default.frag
-C:\Users\tanma\Documents\CodingProjects\MyProjects\Voronoi-Wave-Collapse-Generator\VoronoiWaveCollapseGenerator\x64\Release\default.geom
-C:\Users\tanma\Documents\CodingProjects\MyProjects\Voronoi-Wave-Collapse-Generator\VoronoiWaveCollapseGenerator\x64\Release\default.vert
-C:\Users\tanma\Documents\CodingProjects\MyProjects\Voronoi-Wave-Collapse-Generator\VoronoiWaveCollapseGenerator\x64\Release\framebuffer.frag
-C:\Users\tanma\Documents\CodingProjects\MyProjects\Voronoi-Wave-Collapse-Generator\VoronoiWaveCollapseGenerator\x64\Release\framebuffer.vert

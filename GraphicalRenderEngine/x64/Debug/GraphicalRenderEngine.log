@@ -1,4 +1,0 @@
-﻿  SceneRenderer.cpp
-C:\Users\tanma\Documents\CodingProjects\MyProjects\Graphical-Render-Engine\GraphicalRenderEngine\SceneRenderer.cpp(241,30): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\tanma\Documents\CodingProjects\MyProjects\Graphical-Render-Engine\GraphicalRenderEngine\SceneRenderer.cpp(272,29): warning C4018: '<': signed/unsigned mismatch
-  GraphicalRenderEngine.vcxproj -> C:\Users\tanma\Documents\CodingProjects\MyProjects\Voronoi-Wave-Collapse-Generator\VoronoiWaveCollapseGenerator\x64\Debug\GraphicalRenderEngine.dll
